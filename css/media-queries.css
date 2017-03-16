@@ -1,0 +1,77 @@
+@media only screen and (max-width:1267px) {
+
+	.container .accordion {
+		width: 500px;
+	}
+}
+@media only screen and (max-width:1091px) {
+
+	.info4 {
+		display: none;
+	}
+
+	.tool {
+		display: none;
+	}
+
+	.container .accordion {
+		width: 92%;
+		left: 40px;
+		right: 10px;
+	}
+
+	#map {
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.logo2 {
+		transform: scale(.6) translateX(100px) translateY(-178px);
+	}
+}
+@media only screen and (max-width: 950px) {
+	.info1, .info2, .info3 {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+	.website, .hire {
+		width: 25%;
+		font-size: 85%;
+	}
+}
+@media only screen and (max-width: 550px) {
+	body {
+		background: #100010;
+	}
+	.menu {
+		margin-left: -45px;
+	}
+	.container .accordion {
+		width: 95%;
+		left: 0;
+		right: 2px;
+	}
+}
+@media only screen and (max-width: 770px) {
+	.logo2 {
+		transform: translateX(100px) translateY(-50px) scale(.6);
+	}
+	.website, .hire {
+		font-size: 70%
+	}
+	.info {
+		margin-top: 10%;
+	}
+	h4 {
+		margin-top: 4px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+
+	.logo2 {
+		display: none;
+	}
+}

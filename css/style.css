@@ -25,10 +25,9 @@ h3 {
 /*	text-shadow: 0px 0px 3px lightgrey;*/
 }
 h4 {
-/*	position: absolute;*/
+	position: absolute;
 	color: darkgrey;
-	margin-bottom: 35px;
-	margin-top: 10px;
+	margin-top: 6px;
 	letter-spacing: 4px;
 	font-size: 12px;
 }
@@ -46,6 +45,7 @@ h2 {
 	text-shadow: 1px 1px 2px #a200de
 }
 .content p {
+	margin-top: 35px;
 	font-family: 'Fredoka One', cursive;
 	color: #c9c9c9;
 	text-shadow: 1px 1px 15px #000000;
@@ -153,6 +153,7 @@ a {
 	width: 40px;
 	display: flex;
 	flex-direction: column;
+	z-index: 4;
 }
 .list {
 	width: 100%;
@@ -243,10 +244,9 @@ ul li {
 .info {
 	position: absolute;
 	margin-top: 200px;
-	width: 500px;
+	width: 40%;
 	padding: 50px;
-	position: absolute;
-	margin-left: -742px;
+	margin-left: -782px;
 	background: radial-gradient(ellipse at left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 16%,rgba(0,0,0,0.65) 19%,rgba(0,0,0,0) 71%,rgba(0,0,0,0) 100%);
 /*	background: rgba(5, 5, 5,0.5);*/
 }
@@ -271,36 +271,34 @@ ul li {
 	}
 	90% {
 		opacity: 1;
-		transform: translateX(750px) scale(1.1);
+		transform: translateX(950px) scale(1.1);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(741px) scale(1);
+		transform: translateX(760px) scale(1);
 	}
 }
 @keyframes infoboxes2 {
 	0% {
 		opacity: 0;
-		transform: translateX(0px);
+		transform: translateX(-950px);
 	}
-	90% {
+	95% {
 		opacity: 1;
-		transform: translateX(1500px) scale(1.1);
+		transform: translateX(100px) scale(1.1);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(1450px) scale(1);
+		transform: translateX(0px) scale(1);
+		right: 0;
 	}
 }
 .logo2 {
-	position: absolute;
 	width: 500px;
 	transform: rotateZ(-10deg);
-	margin-left: 60%;
-	position: relative;
-}
-.logo2 > img {
-
+	right: 20px;
+	top: 30px;
+	position: absolute;
 }
 
 .element-animation{
@@ -532,13 +530,13 @@ input[type=submit]{
 	background: rgba(222,222,222,0.3);
 }
 .contact2 {
-/*	margin-top: 12px;*/
+	position: relative;
+	margin-top: 29px;
 }
 .website, .hire {
 	position: absolute;
 	margin-top: 10%;
-	width: 40%;
-	margin-left: 4px;
+	width: 32%;
 	height: 40px;
 	color: white;
 	text-transform: uppercase;
@@ -548,7 +546,7 @@ input[type=submit]{
 	border-style: none;
 }
 .hire {
-	margin-left: 250px;
+	margin-left: 33%;
 }
 .site {
 	transform: translateX(220px) translateY(-5px) rotateZ(1deg);
@@ -556,10 +554,10 @@ input[type=submit]{
 	color: white;
 }
 #map {
+	position: absolute;
 	width: 50%;
 	height: 96%;
-	position: absolute;
-	margin-left: -750px;
+	margin-left: -950px;
 	z-index: 6;
 	border: 13px dashed #894242;
 }
@@ -736,15 +734,14 @@ h4 > span {
 	}
 }
 .accordion {
-	width: 670px;
+	display: none;
 	position: absolute;
-	margin-left: 50%;
-	margin-top: -150px;
+	padding-right: 20px;
+	width: 670px;
+	right: 0;
 	z-index: 5;
 	background: rgba(51, 51, 51, 0.5);
 	border-radius: 19px;
-	display: none;
-
 }
 .accordion h1 > span {
 	font-size: 49px;
@@ -755,6 +752,6 @@ h4 > span {
 .imgdown {
 	transition: all 2s;
 	margin-top: 3.3%;
-	transform: translateX(200px) translateY(160px) scale(.4);
+	transform: translateX(32%) translateY(52%) scale(.4);
 }
 
