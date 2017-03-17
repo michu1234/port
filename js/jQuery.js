@@ -3,6 +3,9 @@ $(document).ready(function(){
 		$(".info1").addClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
 	});
 
+
+
+
 	$(".home").click(function(){
 		$(".info1").toggleClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
 	});
@@ -24,12 +27,16 @@ $(document).ready(function(){
 		$(".info5").toggleClass("animateinfo").siblings().removeClass("animateinfo offacc imgdown");
 	});
 
+
+
 	$(".tool").click(function(){
 		$(".content").toggleClass("off")
 	});
 	$(".tool").click(function(){
 		$(".img2").toggleClass("offimg")
 	});
+
+
 
 	$(".works").click(function(){
 		$(".accordion").toggleClass("offacc");
@@ -44,7 +51,6 @@ $(document).ready(function(){
 
 // MOBILE MENU //
 
-$(document).ready(function () {
 	var menuStatus = false;
 	$('.slideout').hide();
 
@@ -68,4 +74,33 @@ $(document).ready(function () {
 			close();
 		}
 	});
+
+
+
+$(".home1").click(function(){
+	$(".info1").toggleClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
+});
+$(".about1").click(function(){
+	$(".info2").toggleClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
+});
+$(".skills1").click(function(){
+	$(".info3").toggleClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
+});
+$(".works1").click(function(){
+	$(".info4").toggleClass("animateinfo").siblings().removeClass("animateinfo animateinfo2");
+});
+$(".works1").click(function(){
+	$(".accordion").toggleClass("offacc");
+});
+
+$(".works1").click(function(){
+	$(".logo2").toggleClass("imgdown");
+});
+
+$(".contact1").click(function(){
+	$("#map").toggleClass("animateinfo2").siblings().removeClass("animateinfo2");
+});
+
+$(".contact1").click(function(){
+	$(".info5").toggleClass("animateinfo").siblings().removeClass("animateinfo offacc imgdown");
 });

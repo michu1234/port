@@ -98,3 +98,18 @@
 		top: 55px;
 	}
 }
+
+
+@media only screen and (max-width: 470px) {
+
+.info1 h4 {
+	display: none;
+}
+	body {
+		font-size: 50%;
+	}
+	.website,
+	.hire {
+		font-size: 100%
+	}
+}

@@ -766,6 +766,7 @@ h4 > span {
 	margin: 0 auto;
 	overflow: hidden;
 	visibility: collapse;
+	z-index: 6;
 }
 
 .menu2 {
@@ -873,12 +874,6 @@ h4 > span {
 	transition: all .2s ease;
 
 }
-
-.smile {
-	color: #1b1b1b;
-	font-size: 72px;
-	font-weight: 900;
-	margin: 85% 0 40% 5%;
-	display: block;
-	transform: rotateZ(90deg);
+.delete {
+	display: none;
 }
