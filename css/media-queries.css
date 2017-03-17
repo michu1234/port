@@ -1,25 +1,18 @@
 @media only screen and (max-width:1267px) {
-
 	.container .accordion {
 		width: 500px;
 	}
 }
-@media only screen and (max-width:1091px) {
 
+@media only screen and (max-width:1091px) {
 	.info4 {
 		display: none;
 	}
-
-	.tool {
-		display: none;
-	}
-
 	.container .accordion {
 		width: 92%;
 		left: 40px;
 		right: 10px;
 	}
-
 	#map {
 		width: 35%;
 	}
@@ -27,51 +20,77 @@
 
 @media only screen and (max-width: 950px) {
 	.logo2 {
-		transform: scale(.6) translateX(100px) translateY(-178px);
+		transform: scale(.6) translateX(100px) translateY(-178px) rotateZ(-10deg);
 	}
-}
-@media only screen and (max-width: 950px) {
-	.info1, .info2, .info3 {
+	.tool {
+		display: none;
+	}
+	.info1 h4 {
+		top: 126px;
+	}
+	.info1,
+	.info2,
+	.info3 {
 		display: flex;
 		flex-direction: column;
 		width: 80%;
 	}
-	.website, .hire {
+	.website,
+	.hire {
 		width: 25%;
 		font-size: 85%;
 	}
+	.info1 h4,
+	.info2 h4,
+	.info3 h4,
+	.info4 h4,
+	.info5 h4 {
+		margin-top: 46px;
+	}
+	.info5 h4 {
+		margin-top: 6px;
+	}
 }
+
 @media only screen and (max-width: 550px) {
-	body {
-		background: #100010;
+	.logo img {
+		margin-left: 46%;
 	}
 	.menu {
-		margin-left: -45px;
+		display: none;
+	}
+	.social {
+		display: none;
+	}
+	.container2 {
+		visibility: visible;
 	}
 	.container .accordion {
 		width: 95%;
 		left: 0;
 		right: 2px;
+		top: 55px;
 	}
 }
+
 @media only screen and (max-width: 770px) {
-	.logo2 {
-		transform: translateX(100px) translateY(-50px) scale(.6);
-	}
-	.website, .hire {
+	.website,
+	.hire {
 		font-size: 70%
 	}
 	.info {
 		margin-top: 10%;
 	}
 	h4 {
-		margin-top: 4px;
+		margin-top: 120px;
 	}
 }
 
 @media only screen and (max-width: 770px) {
-
 	.logo2 {
 		display: none;
+	}
+	.info1 h4 {
+		top: 125px;
 	}
 }

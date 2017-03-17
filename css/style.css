@@ -565,6 +565,7 @@ h4 > span {
 	background-color: #0d57ff;
 }
 .logo > h4 {
+	position: static;
 	letter-spacing: 1px;
 	text-align: center;
 	background-color:rgb(126, 40, 103);
@@ -755,3 +756,129 @@ h4 > span {
 	transform: translateX(32%) translateY(52%) scale(.4);
 }
 
+/*MOBILE MENU*/
+
+.container2 {
+	width: 100%;
+	height: 460px;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	visibility: collapse;
+}
+
+.menu2 {
+	background: #000;
+	color: #fff;
+	height: 45px;
+	padding: 5px;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 999;
+	font-family: 'Arial';
+}
+
+.menu-txt {
+	margin: 8px 0 0 5px;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.menu-btn {
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.line {
+	background: #fff;
+	display: block;
+	width: 50px;
+	height: 5px;
+	float: right;
+	clear: right;
+	margin: 5px 0;
+}
+
+.hid {
+	transform: rotateZ(225deg);
+	transition: all .2s ease;
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	margin: 20px 0 0 0;
+}
+
+.hid.animate {
+	background: #fff;
+	transform: rotateZ(315deg);
+	transition: all .25s ease .2s;
+}
+
+.second {
+	transform: rotateZ(0deg);
+	transition: all .5s ease;
+	background: #fff;
+}
+
+.second.animate {
+	transform: rotateZ(225deg);
+	transition: all .5s ease;
+}
+
+.first,
+.third {
+	transition: all .5s ease-out;
+}
+
+.third {
+	left: 0;
+	float: left;
+}
+
+.first.animate,
+.third.animate {
+	width: 0;
+	transition: all .3s ease-out;
+}
+
+.slideout {
+	margin-top: 50px;
+	display: block;
+	background: #000;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slideout li:first-child {
+	border-top: thin solid #333;
+}
+
+.slideout li {
+	color: #fff;
+	padding: 19px;
+	border-bottom: thin solid #333;
+	cursor: pointer;
+	transition: all .2s ease;
+}
+
+.slideout li:hover {
+	background: #151515;
+	transition: all .2s ease;
+
+}
+
+.smile {
+	color: #1b1b1b;
+	font-size: 72px;
+	font-weight: 900;
+	margin: 85% 0 40% 5%;
+	display: block;
+	transform: rotateZ(90deg);
+}

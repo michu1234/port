@@ -41,3 +41,31 @@ $(document).ready(function(){
 
 });
 
+
+// MOBILE MENU //
+
+$(document).ready(function () {
+	var menuStatus = false;
+	$('.slideout').hide();
+
+	function open() {
+		$('.first, .second, .third, .hid').addClass('animate');
+		menuStatus = true;
+	}
+
+	function close() {
+		$('.first, .second, .third, .hid').removeClass('animate');
+		menuStatus = false;
+	}
+	$('.menu-btn').click(function () {
+		$('.slideout').toggle('slide');
+		if (menuStatus === false) {
+			$('.menu-txt').html('Close');
+			open();
+		}
+		else {
+			$('.menu-txt').html('David');
+			close();
+		}
+	});
+});
