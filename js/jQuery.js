@@ -3,7 +3,9 @@ $(document).ready(function(){
 		$(".info1").addClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
 	});
 
-
+$(".logo > img").mouseout(function(){
+	$(this).addClass("imgreverse")
+});
 
 
 	$(".home").click(function(){
