@@ -43,6 +43,9 @@ function draw() {
   numbers.y = random(0, height);
   numbers.z = random(10, 50);
 
+  if (windowWidth < 480){
+  clear();
+}
 }
 
 function mousePressed() {

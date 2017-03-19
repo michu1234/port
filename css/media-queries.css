@@ -69,6 +69,11 @@
 	.tool {
 		display: none;
 	}
+/*
+	.info p {
+   font-size: 3vw;
+	}
+*/
 }
 
 @media only screen and (max-width: 550px) {
@@ -96,7 +101,12 @@
 		left: 0;
 		right: 2px;
 		top: 55px;
+/*
 	}
+	.info p {
+		font-size: 1em;
+	}
+*/
 }
 
 
@@ -112,4 +122,12 @@
 	.hire {
 		font-size: 100%
 	}
+	body {
+		overflow-y: scroll;
+	}
+/*
+	.info p {
+		font-size: 1.4em;
+	}
+*/
 }
