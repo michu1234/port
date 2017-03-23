@@ -3,7 +3,6 @@
 	padding: 0px;
 }
 body {
-/*	overflow: hidden;*/
 	background: rgb(37, 38, 39);
 	width: 100%;
 	height: 100vh;
@@ -252,7 +251,7 @@ ul li {
 	margin-top: 150px;
 	width: 40%;
 	padding: 50px;
-	margin-left: -782px;
+	margin-left: -2782px;
 	background: radial-gradient(ellipse at left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 16%,rgba(0,0,0,0.65) 19%,rgba(0,0,0,0) 71%,rgba(0,0,0,0) 100%);
   z-index: 2;
 }
@@ -277,11 +276,11 @@ ul li {
 	}
 	90% {
 		opacity: 1;
-		transform: translateX(950px) scale(1.1);
+		transform: translateX(2950px) scale(1.1);
 	}
 	100% {
 		opacity: 1;
-		transform: translateX(760px) scale(1);
+		transform: translateX(2760px) scale(1);
 	}
 }
 @keyframes infoboxes2 {
@@ -570,7 +569,7 @@ input[type=submit]{
 	position: absolute;
 	width: 50%;
 	height: 96%;
-	margin-left: -950px;
+	margin-left: -1950px;
 	z-index: 6;
 	border: 13px dashed #894242;
 }
