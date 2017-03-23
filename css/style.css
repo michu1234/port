@@ -145,6 +145,7 @@ a {
 	position: absolute;
 }
 .menu {
+   box-shadow: 1px 1px 20px black;
 	background: #181818;
 /*	overflow-x: hidden;*/
   position: relative;
