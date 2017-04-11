@@ -308,7 +308,7 @@ ul li {
 	z-index: 0;
 }
 .logo2:hover {
-	filter: saturate(20%) drop-shadow(10px 10px 10px);
+	filter: saturate(20%);
 	transform: scale3d(1.5,1.5,1.5);
 	transition: all 1s linear;
 	cursor: pointer;
