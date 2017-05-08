@@ -231,7 +231,7 @@ ul li {
 	color: #411f4e;
 }
 .tool {
-	animation: animationFrames 1s linear 1s;
+	animation: animationFrames 1s linear 7s;
 	animation-iteration-count: 2;
 }
 .content {
@@ -315,6 +315,7 @@ ul li {
 }
 
 .element-animation{
+
 	animation: animationFrames linear 1s;
 	animation-iteration-count: 2;
 	transform-origin: 50% 50%;
@@ -330,6 +331,7 @@ ul li {
 	-ms-animation: animationFrames linear 1s;
 	-ms-animation-iteration-count: 1;
 	-ms-transform-origin: 50% 50%;
+	animation-delay: 6s;
 }
 
 @keyframes animationFrames{
@@ -890,4 +892,43 @@ h4 > span {
 }
 .delete {
 	display: none;
+}
+
+
+/* LOADER */
+.load-container {
+	background:#ECF0F1;
+	z-index: 999999;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+	/*change these sizes to fit into your project*/
+	width:100px;
+	height:100px;
+	position: absolute;
+}
+hr:after {
+	content: "D!";
+	margin: 16%;
+	margin-top: 26%;
+	position: absolute;
+	color: white;
+	text-shadow: 1px 1px 20px white;
+	font-weight: bold;
+	font-family: "Open Sans"
+}
+.load hr{box-shadow: 1px 100px 20px lightgray; border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#F2152B;animation-delay:-1.5s}
+.load :nth-child(2){background:#FF5A5F;animation-delay:-1s}
+.load :nth-child(3){background:#D8CBC7;animation-delay:-0.5s}
+.load :last-child{background:#FF004C}
+
+@keyframes spin{
+	0%,100%{transform:translate(0)}
+	25%{transform:translate(100%)}
+	50%{transform:translate(100%, 100%)}
+	75%{transform:translate(0, 100%)}
 }

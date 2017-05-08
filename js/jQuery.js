@@ -1,4 +1,7 @@
+
 $(document).ready(function(){
+	$(".load-container").delay(5000).slideUp("slow");
+	$(".container").show("fast");
 	$(function() {
 		$(".info1").addClass("animateinfo").siblings().removeClass("animateinfo animateinfo2 offacc imgdown");
 	});
