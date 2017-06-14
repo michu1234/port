@@ -683,6 +683,9 @@ h4 > span {
 .accordion ul li:nth-of-type(3) {
 	animation-delay: 1s;
 }
+.accordion ul li:nth-of-type(4) {
+	animation-delay: 1.25s;
+}
 .accordion ul li:last-of-type {
 	padding-bottom: 0;
 }
